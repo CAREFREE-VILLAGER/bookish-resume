@@ -1,0 +1,179 @@
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  animation: fade-in 1s ease-in-out;
+  background-image: url('batlast.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: #f4d03f;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #f4d03f;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #0c2542;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background-image: url('batman-profile.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.resume-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f4d03f;
+}
+
+.resume-details {
+  margin-left: 20px;
+}
+
+.resume-name {
+  font-size: 32px;
+  color: #fff;
+}
+
+.resume-title {
+  font-size: 24px;
+  color: #f4d03f;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-me {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.about-me h2 {
+  color: #f4d03f;
+}
+
+.about-me p {
+  color: #ffffff;
+}
+
+.skills-achievements-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills,
+.achievements,
+.superpowers {
+  flex: 1 0 300px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.skills h2,
+.achievements h2,
+.superpowers h2 {
+  color: #f4d03f;
+}
+
+.skills ul,
+.achievements ul,
+.superpowers ul {
+  list-style-type: disc;
+}
+
+.skills li,
+.achievements li,
+.superpowers li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 8px;
+  color: #f4d03f;
+}
+
+.rotate-icon {
+  color: #e74c3c;
+}
+
+.scale-icon {
+  color: #27ae60;
+}
+
+@media screen and (max-width: 768px) {
+  .resume-container {
+    padding: 20px;
+  }
+
+  .resume-photo {
+    width: 80px;
+    height: 80px;
+    border-width: 2px;
+  }
+
+  .resume-name {
+    font-size: 24px;
+  }
+
+  .resume-title {
+    font-size: 18px;
+  }
+
+  .about-me,
+  .skills,
+  .achievements,
+  .superpowers {
+    flex: 1 0 100%;
+  }
+}
